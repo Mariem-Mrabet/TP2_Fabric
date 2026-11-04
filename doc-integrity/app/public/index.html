@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockchain Document Integrity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Blockchain Document Integrity</h1>
+
+    <label for="docId">Identifiant du document</label>
+    <input id="docId" type="text" placeholder="DOC001">
+
+    <label for="content">Contenu du document</label>
+    <textarea id="content" rows="6" placeholder="Saisir le contenu du document..."></textarea>
+
+    <button id="btnHash">Calculer le hash</button>
+
+    <label for="hash">Hash calculé (SHA-256)</label>
+    <input id="hash" type="text" readonly>
+
+    <div class="actions">
+      <button id="btnRegister">Enregistrer dans Fabric</button>
+      <button id="btnVerify">Vérifier l'intégrité</button>
+      <button id="btnRead" class="secondary">Lire le hash enregistré</button>
+    </div>
+
+    <div id="result" class="result"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
